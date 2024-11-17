@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "production") {
 } else {
   if (!global.prisma) {
     console.log(
-      "Development environment detected and no global PrismaClient instance found. Creating a new PrismaClient instance."
+      "Development environment detected and kno global PrismaClient instance found. Creating a new PrismaClient instance."
     );
     global.prisma = new PrismaClient();
   }
