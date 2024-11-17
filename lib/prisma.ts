@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
     global.prisma = new PrismaClient();
   }
   console.log(
-    "Development environment detected and existing global PrismaClient instance found. Reusing the PrismaClient instance."
+    "Development environment detectsed and existing global PrismaClient instance found. Reusing the PrismaClient instance."
   );
   prisma = global.prisma;
 }
