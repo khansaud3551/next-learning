@@ -14,14 +14,6 @@ export const authOptions: AuthOptions = {
   ],
   adapter: PrismaAdapter(prisma),
   secret: process.env.NEXTAUTH_SECRET, // Use NEXTAUTH_SECRET for consistency with NextAuth v4 conventions
-
-  callbacks: {
-    async session({ session, user, token }) {
-      // Customize the session object here
-      session.user.id = user.id;
-      return session;
-    },
-  },
 };
 
 // Define the API route handler for NextAuth
